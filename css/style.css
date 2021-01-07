@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body 
+{
+  font-family: 'Lato', sans-serif;
+  background: #f2f2f2;
+}
+
+
+/* nav */
+nav
+{
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  padding: 0 15px;
+  align-items: center;
+  background: #f2f2f2;
+  color: #030303;
+
+}
+
+
+nav .logo
+{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav .logo a 
+{
+  text-decoration: none;
+  color: #030303;
+  display: block;
+  line-height: 75px;
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+nav .logo a:hover
+{
+  background: rgba(255, 255, 255, 0.5);
+}
+
+nav .logo a span 
+{
+  color: rgba(255, 56, 96, 1);
+  margin-right: 5px;
+}
+
+nav .documentation 
+{
+  font-size: 20px;
+}
+
+/* usage */
+.usage 
+{
+  background: white;
+  padding: 15px ;
+}
+
+.usage-home 
+{
+  display: flex;
+  padding: 20px 10px;
+}
+
+.usage-home-desc 
+{
+  width: 50%;
+  padding: 10px;
+} 
+
+.usage-home-desc  p 
+{
+  margin-top: 25px;
+}
+.usage-home-img 
+{
+  width: 50%;
+  padding: 10px;
+
+} 
+.usage-home-img img 
+{
+  width: 100%;
+}
+
+/* footer */
+footer 
+{
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+/* tablets */
+@media(max-width: 800px)
+{
+  .usage-home 
+{
+  flex-direction: column;
+}
+
+.usage-home-desc 
+{
+  width: 100%;
+}
+.usage-home-img 
+{
+  width: 100%;
+} 
+}
